@@ -48,5 +48,15 @@ main();
 </script>
 </head>
 <body style="margin:0px;width:100vw;height:100vh;" id="game_frame">
+	<!-- Mod Menu -->
+<div id="modMenu" style="position:absolute;top:50px;left:20px;background:#111;padding:10px;color:#fff;z-index:999;display:none;">
+  <h3>Mod Menu</h3>
+  <label><input type="checkbox" id="killauraToggle"> KillAura</label><br>
+  <label><input type="checkbox" id="flyToggle"> Fly</label><br>
+</div>
+
+<!-- Toggle Button -->
+<button onclick="document.getElementById('modMenu').style.display = (modMenu.style.display === 'none' ? 'block' : 'none')" style="position:absolute;top:10px;left:10px;z-index:1000;">☰ Mods</button>
+
 </body>
 </html>
